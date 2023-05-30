@@ -1,0 +1,141 @@
+body {
+    font-family: Tahoma;
+}
+
+
+/* NAVBAR Styles */
+
+nav>img{
+    width: 130px;
+    height: 100px;
+    margin-right: 20px;
+}
+ul li a {
+    font-size: 20px !important;
+}
+ul>li>a:hover, ul~a:hover{
+    border-top: 7px solid rgb(255, 101, 45);
+    border-bottom: 7px solid rgb(255, 101, 45);
+}
+
+.ATS_WelcomeLine {
+    border: 1px solid rgb(199, 199, 199);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.Home_MainImg{
+    border-radius: 25%;
+            height: 200px;
+            width: 200px;
+}
+
+.ATS-text1{
+    color:orangered;
+    background-color: #35B7FF;
+    font-size: 35px;
+    font-weight: bold;
+    }
+.bdrbtm{
+    border-bottom: 7px solid orangered;
+}
+thead>td{
+    font-size: 25px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .quiz-title {
+    text-align: center;
+  }
+  
+  .options {
+    margin-left: 20px;
+  }
+  
+  .btn-primary {
+    margin-top: 10px;
+  }
+ thead td a{
+    text-decoration: none;
+}
+
+/* Registration And Login_Styles */
+.login-form {
+    /* margin-top: 80px; */
+    border: 1px solid #959595;
+    border-radius: 10px;
+    padding: 25px;
+    /* background-color: #FFFFFF; */
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.login-form h2 {
+    color: orangered;
+    font-weight: bold;
+    text-align: center;
+}
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    border: 2px solid #C9C9C9;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #008080;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #007070;
+}
+    /* Custom CSS for the footer */
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer .left-section {
+    text-align: left;
+  }
+  
+  .footer .center-section {
+    text-align: center;
+  }
+  
+  .footer .right-section {
+    text-align: right;
+  }
+  
+  .footer .social-link {
+    margin-right: 10px;
+  }
+  .footer-links li a{
+    text-decoration: none;
+    line-height: 25px;
+    color: rgb(107, 107, 107);
+  }
+  .footer-links li a:hover{
+    color: blue;
+    border: 0px solid red;
+    text-decoration: underline;
+  } 
+  .border-right-dark{
+    border-right: 1px solid rgb(142, 141, 141);
+    padding-right: 10px;
+  }

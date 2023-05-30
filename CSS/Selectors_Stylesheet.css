@@ -1,0 +1,48 @@
+                                                        /* DESCENDENT SELECTORS */
+ /* div span{color: blue;} */
+ 
+                                                        /* CHILD SELECTORS */
+/* div>h1{color: red;} */
+
+                                                        /* ADJACENT SIBLINGS SELECTORS */
+/* p + p{color: orangered;} */
+
+                                                        /* GENERAL SIBLINGS SELECTORS */
+/* h1~h2{color: purple;} */
+
+                                                        /* PSEUDO SELECTORS */
+/* p:first-child{color: red;}
+p:last-child{color: pink;}
+p:nth-child(4){color: blue;}
+div:only-of-type{color: purple;}
+div:only-child{color: green;}
+p:nth-of-type(2n+1){color: orangered;}
+p:nth-of-type(2n){color: orchid;}
+div:not(p){color: orangered;} */
+
+
+
+                                                        /* FORM SELECTORS */
+/* Not Applicable if Classes of bootstrap are applied on input boxes */
+/* input:focus{border: 5px solid skyblue;border-radius: 5px;}
+input[type='radio']:checked + label{color: red;}
+input[type='checkbox']:checked + label {color: red;box-shadow: 0px 0px 4px 4px yellowgreen;} */
+/* Applicable for text, radio, checkboxes */
+/* input:enabled{border: 3px solid rgb(86, 196, 247);border-radius: 10px;}
+input:disabled{border: 3px solid grey;border-radius: 10px;}
+input:required{border: 3px solid red;}
+input:optional{border: 3px solid rgb(213, 12, 213);} */
+/* Applicable for email, Number type */
+/* input :valid{color: black;}
+input:invalid{color: red;} */
+/* Just Applicable on Numbers Type */
+/* input:in-range{background-color: white;}
+input:out-of-range{background-color: aqua;}
+input:default{border: 3px solid rgb(86, 196, 247);} */
+
+
+                                                        /* LINK STYLES */
+/* a:hover{color: red;}
+a:visited{color: purple;}
+a:active{color: orangered;}
+a:disabled{color: grey;} */
