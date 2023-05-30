@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="Online_Text.css" />
+  <link rel="stylesheet" href="../CSS/all.css" />
+  <link rel="stylesheet" href="./CSS/MS_Stylesheet.css">
+  <link rel="stylesheet" href="../CSS/ATS_Custom_Stylesheet.css" />
+  <link rel="stylesheet" href="./CDN/Bootstrap_CDN.css" />
+  <link rel="stylesheet" href="./CDN/jQuery_CDN.js" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <title>MS Office Online ATS Test</title>
+</head>
+<body>
+
+  <div class="container mt-4">
+    <table class="table table-bordered">
+      <div class=" container p-1 border text-center line-height-50 text-orangered font-size-15 text-bold ATS_WelcomeLine">
+        ONLINE MCQ's TEST COMMENCEMENT 2023</div>
+      <thead class="bg-orange text-white font-weight-bold">
+        <td class="text-general text-center">TEST CATAGORY</td>
+        <td class="text-general text-center">REMAINING TIME</td>
+      </thead>
+      <tr class="table-muted">
+        <td class="text-general text-center">Microsoft Office</td>
+        <td class="text-general text-center text-danger font-weight-bold" id="timer"></td>
+      </tr>
+    </table>
+    <br />
+  </div>
+
+  <div>
+    <center>
+      <h1 id="timer"></h1>
+    </center>
+    <script>
+      // Set the timer duration in minutes
+      const duration = 10;
+      // Calculate the target end time
+      const endTime = new Date();
+      endTime.setMinutes(endTime.getMinutes() + duration);
+
+      // Update the timer every second
+      const timerElement = document.getElementById("timer");
+      const timerInterval = setInterval(updateTimer, 1000);
+
+      function updateTimer() {
+        // Get the current time
+        const currentTime = new Date();
+
+        // Calculate the remaining time in milliseconds
+        const remainingTime = endTime - currentTime;
+
+        // Stop the timer if time is up
+        if (remainingTime <= 0) {
+          clearInterval(timerInterval);
+          timerElement.textContent = "Time's up!";
+          return;
+        }
+
+        // Convert remaining time to minutes and seconds
+        const minutes = Math.floor(remainingTime / 60000);
+        const seconds = Math.floor((remainingTime % 60000) / 1000);
+
+        // Display the remaining time
+        timerElement.textContent = `${minutes}m ${seconds}s`;
+      }
+    </script>
+  </div>
+
+  <!-- MCQS Start Here -->
+
+  <div class="container">
+    <form id="MCQS_MSoffice">
+      <center>
+        <h1 class="quiz-title text-orangered">
+          Attempt the Following MCQ's within the provided Time.
+        </h1>
+      </center>
+
+      <!-- Question-1 -->
+      <div class="question col-12 Question-1">
+        <div class="justify-content-center align-items-center p-2">
+          <div class="card-body">
+            <h4 class="card-header">
+              1: We can detect spelling and grammar error by:
+            </h4>
+            <ul class="list-group list-group-flush mb-2">
+              <li class="list-group-item">
+                <input type="radio" id="q1a" name="question1" value="a" />
+                <label for="q1a">Shift + F7</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q1b" type="radio" name="question1" value="b" />
+                <label for="q1b">F7</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q1c" type="radio" name="question1" value="c" />
+                <label for="q1c">Alt + F7</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q1d" type="radio" name="question1" value="d" />
+                <label for="q1d">Ctrl + F7</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question-2 -->
+      <div class="question col-12 Question-2">
+        <div class="justify-content-center align-items-center p-2">
+          <div class="card-body">
+            <h4 class="card-header">
+              2: What is the shortcut key to Cut some Text in MS Office?
+            </h4>
+            <ul class="list-group list-group-flush mb-2">
+              <li class="list-group-item">
+                <input type="radio" id="q2a" name="question2" value="a" />
+                <label for="q2a">Ctrl + X</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q2b" type="radio" name="question2" value="b" />
+                <label for="q2b">Ctrl + A</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q2c" type="radio" name="question2" value="c" />
+                <label for="q2c">Ctrl + U</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q2d" type="radio" name="question2" value="d" />
+                <label for="q2d">Ctrl + C</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question-3 -->
+      <div class="question col-12 Question-3">
+        <div class="justify-content-center align-items-center p-2">
+          <div class="card-body">
+            <h4 class="card-header">
+              3: What is the shortcut key to replace some text with another
+              text in MS Office?
+            </h4>
+            <ul class="list-group list-group-flush mb-2">
+              <li class="list-group-item">
+                <input type="radio" id="q3a" name="question3" value="a" />
+                <label for="q3a">Ctrl + A</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q3b" type="radio" name="question3" value="b" />
+                <label for="q3b">Ctrl + U</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q3c" type="radio" name="question3" value="c" />
+                <label for="q3c">Ctrl + H</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q3d" type="radio" name="question3" value="d" />
+                <label for="q3d">Ctrl + C</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question-4 -->
+      <div class="question col-12 Question-4">
+        <div class="justify-content-center align-items-center p-2">
+          <div class="card-body">
+            <h4 class="card-header">
+              4: What is the shortcut key to zoom-out the text in MS Word?
+            </h4>
+            <ul class="list-group list-group-flush mb-2">
+              <li class="list-group-item">
+                <input type="radio" id="q4a" name="question4" value="a" />
+                <label for="q4a">Ctrl + (</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q4b" type="radio" name="question4" value="b" />
+                <label for="q4b">Ctrl + {</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q4c" type="radio" name="question4" value="c" />
+                <label for="q4c">Ctrl + [</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q4d" type="radio" name="question4" value="d" />
+                <label for="q4d">Ctrl + /</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question-5 -->
+      <div class="question col-12 Question-5">
+        <div class="justify-content-center align-items-center p-2">
+          <div class="card-body">
+            <h4 class="card-header">
+              5: What is the shortcut key to create a spacing of 1.5 between
+              two lines in MS Word?
+            </h4>
+            <ul class="list-group list-group-flush mb-2">
+              <li class="list-group-item">
+                <input type="radio" id="q5a" name="question5" value="a" />
+                <label for="q5a">Ctrl + 1</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q5b" type="radio" name="question5" value="b" />
+                <label for="q5b">Ctrl + 1.5</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q5c" type="radio" name="question5" value="c" />
+                <label for="q5c">Ctrl + 2</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q5d" type="radio" name="question5" value="d" />
+                <label for="q5d">Ctrl + 5</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question-6 -->
+      <div class="question col-12 Question-6">
+        <div class="justify-content-center align-items-center p-2">
+          <div class="card-body">
+            <h4 class="card-header">
+              6: What is the shortcut key to paste a copied text in MS Office?
+            </h4>
+            <ul class="list-group list-group-flush mb-2">
+              <li class="list-group-item">
+                <input type="radio" id="q6a" name="question6" value="a" />
+                <label for="q6a">Ctrl + C</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q6b" type="radio" name="question6" value="b" />
+                <label for="q6b">Ctrl + P</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q6c" type="radio" name="question6" value="c" />
+                <label for="q6c">Ctrl + V</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q6d" type="radio" name="question6" value="d" />
+                <label for="q6d">Ctrl + X</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question-7 -->
+      <div class="question col-12 Question-7">
+        <div class="justify-content-center align-items-center p-2">
+          <div class="card-body">
+            <h4 class="card-header">
+              7: What is the shortcut key to align the text on the center of
+              the page in MS Office?
+            </h4>
+            <ul class="list-group list-group-flush mb-2">
+              <li class="list-group-item">
+                <input type="radio" id="q7a" name="question7" value="a" />
+                <label for="q7a">Ctrl + C</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q7b" type="radio" name="question7" value="b" />
+                <label for="q7b">Ctrl + S</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q7c" type="radio" name="question7" value="c" />
+                <label for="q7c">Ctrl + L</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q7d" type="radio" name="question7" value="d" />
+                <label for="q7d">Ctrl + E</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question-8 -->
+      <div class="question col-12 Question-8">
+        <div class="justify-content-center align-items-center p-2">
+          <div class="card-body">
+            <h4 class="card-header">
+              8: What is the shortcut key to create add a new slide in MS
+              Powerpoint?
+            </h4>
+            <ul class="list-group list-group-flush mb-2">
+              <li class="list-group-item">
+                <input type="radio" id="q8a" name="question8" value="a" />
+                <label for="q8a">Ctrl + N</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q8b" type="radio" name="question8" value="b" />
+                <label for="q8b">Ctrl + S</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q8c" type="radio" name="question8" value="c" />
+                <label for="q8c">Ctrl + M</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q8d" type="radio" name="question8" value="d" />
+                <label for="q8d">Ctrl + A</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question-9 -->
+      <div class="question col-12 Question-9">
+        <div class="justify-content-center align-items-center p-2">
+          <div class="card-body">
+            <h4 class="card-header">
+              9: Which shortcut is used to change the font case in Microsoft
+              Word?
+            </h4>
+            <ul class="list-group list-group-flush mb-2">
+              <li class="list-group-item">
+                <input type="radio" id="q9a" name="question9" value="a" />
+                <label for="q9a">Ctrl + F</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q9b" type="radio" name="question9" value="b" />
+                <label for="q9b">Shift+F3</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q9c" type="radio" name="question9" value="c" />
+                <label for="q9c">Shift+F2</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q9d" type="radio" name="question9" value="d" />
+                <label for="q9d">Ctrl + F3</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question-10 -->
+      <div class="question col-12 Question-10">
+        <div class="justify-content-center align-items-center p-2">
+          <div class="card-body">
+            <h4 class="card-header">
+              10: Which shortcut is used to create hyperlink in Microsoft
+              Word?
+            </h4>
+            <ul class="list-group list-group-flush mb-2">
+              <li class="list-group-item">
+                <input type="radio" id="q10a" name="question10" value="a" />
+                <label for="q10a">Ctrl + I</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q10b" type="radio" name="question10" value="b" />
+                <label for="q10b">Ctrl + L</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q10c" type="radio" name="question10" value="c" />
+                <label for="q10c">Ctrl + K</label>
+              </li>
+              <li class="list-group-item">
+                <input id="q10d" type="radio" name="question10" value="d" />
+                <label for="q10d">Ctrl + H</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row" id="result"></div> -->
+      <center>
+        <div class="col-12">
+          <input type="submit" value="Submit" class="btn btn-block btn-outline-danger btn-lg" />
+        </div>
+      </center>
+    </form>
+  </div>
+  <br />
+  <br />
+  <!-- Test Result -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="MCQS_MSoffice.js"></script>
+</body>
+
+</html>
